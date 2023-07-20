@@ -1,0 +1,172 @@
+/* Estilos para o cabeçalho */
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px; /* Ajuste o tamanho do logo conforme necessário */
+  margin-right: 10px; /* Espaçamento à direita do logo */
+}
+
+.logo h1 {
+  font-size: 30px; /* Ajuste o tamanho da fonte conforme necessário */
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Estilos para a lista de sabores de pizzas */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: white; /* Adicionando cor branca ao texto */
+  margin-bottom: 10px;
+  border-top: 1px solid yellow; /* Linha superior */
+  border-bottom: 1px solid yellow; /* Linha inferior */
+}
+
+li:last-child {
+  border-bottom: none; /* Remover linha separadora do último item */
+}
+
+li h3 {
+  margin: 0;
+}
+
+li p {
+  margin: 0;
+  text-align: center;
+}
+
+.pizza-nome {
+  padding: 10px;
+  color: yellow;
+}
+
+.pizza-ingredientes {
+  word-wrap: normal;
+  color: white;
+}
+
+.pizza-valores {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.valor-item {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Espaçamento entre os valores */
+}
+
+.valores-labels {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1px; /* Espaçamento inferior */
+}
+
+.valor-label {
+  margin-right: 25px; /* Espaçamento entre o texto "Valor" e o valor real */
+  border: 1px solid yellow;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.valor {
+  border: 1px solid yellow; /* Borda para o valor */
+  padding: 10px;
+  border-radius: 10px; /* Cantos arredondados */
+  color: white;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(assets/fundopizzaaa.jpeg);
+  color: white;
+  font-family: 'Zilla Slab', serif;
+}
+
+.bebidas-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bebidas-lista li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.bebida-nome {
+  flex-grow: 1;
+  margin: 0;
+  text-align: left;
+}
+
+.bebida-valores {
+  text-align: right;
+}
+
+.valor {
+  border: 1px solid yellow;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Zilla Slab', serif;
+}
+
+@media (max-width: 915px) {
+  /* Mobile config */
+  .pizza-ingredientes {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: auto;
+    white-space: normal; /* Adicionamos essa propriedade para resetar o white-space */
+  }
+  body {
+    font-size: 10px;
+  }
+  .valor-label {
+    margin-right: 10px; /* Espaçamento entre o texto "Valor" e o valor real */
+    border: 1px solid yellow;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+}
