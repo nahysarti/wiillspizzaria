@@ -104,7 +104,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url(assets/fundopizzaaa.jpeg);
   color: white;
   font-family: 'Zilla Slab', serif;
 }
@@ -120,7 +119,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid yellow;
   color: white;
   margin-bottom: 10px;
 }
