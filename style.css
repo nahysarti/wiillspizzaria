@@ -105,6 +105,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
+  background-image: url();
   font-family: 'Zilla Slab', serif;
 }
 
